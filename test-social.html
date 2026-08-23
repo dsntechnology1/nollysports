@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+body { background:#111; margin:0; height:200vh; }
+.social-float {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.soc-btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.soc-icon {
+    width: 56px; height: 56px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.5rem; color: white;
+}
+.ig .soc-icon { background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.tt .soc-icon { background: #010101; }
+.fb .soc-icon { background: #1877f2; }
+</style>
+</head>
+<body>
+<div class="social-float">
+<a class="soc-btn ig" href="#"><div class="soc-icon"><i class="fa-brands fa-instagram"></i></div></a>
+<a class="soc-btn tt" href="#"><div class="soc-icon"><i class="fa-brands fa-tiktok"></i></div></a>
+<a class="soc-btn fb" href="#"><div class="soc-icon"><i class="fa-brands fa-facebook-f"></i></div></a>
+</div>
+</body>
+</html>
